@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Researcher</title>
+    <title>Waqas Ali</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,27 +14,19 @@
             flex-direction: column;
             align-items: center;
         }
-        .header {
-            width: 100%;
-            height: 50vh;
-        }
-        .header img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
         .container {
             width: 60%;
             background: white;
             padding: 20px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            margin-top: -50px;
-            position: relative;
+            margin-top: 20px;
+            display: flex;
         }
         .content {
             display: flex;
-            margin-top: 20px;
+            width: 100%;
+            align-items: center;
         }
         .sidebar {
             width: 30%;
@@ -43,15 +35,21 @@
         .bio {
             width: 70%;
         }
+        .image-container {
+            width: 40%;
+            height: auto;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
         h1 {
             font-size: 24px;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <img src="your-image.jpg" alt="Your Picture">
-    </div>
     <div class="container">
         <div class="content">
             <div class="sidebar">
@@ -61,6 +59,9 @@
             <div class="bio">
                 <p>I am a researcher at the Division of Robotics, Perception, and Learning, specializing in localization and mapping for complex, large-scale environments. My work focuses on developing robust and scalable solutions using consumer-grade LiDARs with minimal human intervention, enabling autonomous systems to operate reliably in real-world conditions. By combining techniques from SLAM, sensor fusion, and AI-driven perception, I aim to improve how robots understand and navigate their surroundings, supporting downstream tasks such as autonomous navigation and scene interpretation. My goal is to create adaptable and efficient robotic systems that can function in dynamic, unstructured environments with high precision.</p>
                 <p>With over six years of experience in autonomous navigation, I have contributed to a variety of projects, from designing SLAM algorithms for both indoor and outdoor applications to implementing advanced localization techniques for AGVs. I have also worked on obstacle avoidance systems for UAVs and developed precise control strategies using fuzzy logic. My research is driven by the challenge of making robotic perception and navigation more reliable and accessible, bridging the gap between theoretical advancements and practical deployment. I am passionate about pushing the boundaries of autonomous systems, ensuring they can seamlessly integrate into real-world applications and operate with minimal reliance on prior knowledge.</p>
+            </div>
+            <div class="image-container">
+                <img src="assets/background.jpg" alt="Background">
             </div>
         </div>
     </div>
