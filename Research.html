@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Waqas Ali</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .project {
+            display: flex;
+            margin-bottom: 30px;
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .project img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .project-info {
+            flex: 1;
+        }
+        .project h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .project p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .project a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .project a:hover {
+            text-decoration: underline;
+        }
+        /* New sub-section styles */
+        .sub-section {
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Research - Waqas Ali</h1>
+    </div>
+
+    <div class="container">
+        <!-- Project 1 -->
+        <div class="project">
+            <img src="project1.jpg" alt="Project 1 Image">
+            <div class="project-info">
+                <h2> CLASLAM (Complex Large Scale Localization and Mapping)</h2>
+                <p><strong>Funding:</strong>  Wallenberg AI, Autonomous Systems and Software Program </p>
+                <p>Description: Research and Development of robust localization and mapping capabilities in complex large-scale environments with consumer grade LiDARs and minimum human intervention directly supporting downstream tasks.</p>
+
+                <!-- Sub-section 1 -->
+                <div class="sub-section">
+                    <h3>Loop Closure Detection for Large scale environments</h3>
+                    <p>Loop closure detection for large scale environments.</p>
+                </div>
+
+                <!-- Sub-section 2 -->
+                <div class="sub-section">
+                    <h3>HD-maps as prior information for globally consistent mapping</h3>
+                    <p><strong>Link:</strong> <a href="https://arxiv.org/pdf/2407.19463" target="_blank">Project Link</a></p>
+                    <p> we propose a lidar based localization and mapping (LOAM) system that can  exploit the common HD-maps in autonomous driving scenarios.  Specifically, we propose a technique to extract information from  the drivable area and ground surface height components of the HD-maps to construct 4DOF pose priors. These pose priors are then further integrated into the pose-graph optimization problem to create a globally consistent 3D map.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project">
+            <img src="project2.jpg" alt="Project 2 Image">
+            <div class="project-info">
+                <h2> Life-long SLAM using 3D LiDAR</h2>
+                <!-- <p><strong>Link:</strong> <a href="https://www.example.com" target="_blank">Project Link</a></p> -->
+                <p><strong>Organization:</strong>  Shanghai Key Lab of Navigation and Location-based Services, Shanghai Jiaotong University </p>
+                <p>Description: Implemented a feature detection approach based on applying an ORB feature detector on laser-rasterized images, and built a complete SLAM system based on such a feature detection method that can estimate the accurate 6DOF pose of the robot at minimal computational costs. The work was published in the IEEE Sensors Journal.</p>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project">
+            <img src="UAV_swarm.jpg" alt="UAV_swarm">
+            <div class="project-info">
+                <h2> Fixed-wing UAV swarm </h2>
+                <p><strong>Funding:</strong> China Electronics Technology Group Corporation </p>
+                <p>Description: A swarm based on 119 small fixed-wing UAVs successfully demonstrated actions such as intensive ejection take-off, aerial assembly, multi-target grouping, formation encirclement, and group operations. As system engineer, I contributed to the implementation of the leader-follower swarm formation with collision avoidance among swarm agents.</p>
+            </div>
+        </div>
+        
+        <!-- Additional projects can be added in the same format -->
+    </div>
+
+</body>
+</html>
