@@ -24,6 +24,7 @@
         }
         .project {
             display: flex;
+            flex-direction: column;
             margin-bottom: 30px;
             background-color: white;
             padding: 15px;
@@ -55,10 +56,38 @@
         .project a:hover {
             text-decoration: underline;
         }
-        /* New sub-section styles */
+
+        /* Sub-section styles with images */
         .sub-section {
+            display: flex;
+            align-items: center;
             margin-top: 20px;
-            padding-left: 20px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+        .sub-section img {
+            width: 150px;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .sub-section-text {
+            flex: 1;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .project {
+                flex-direction: column;
+            }
+            .sub-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .sub-section img {
+                margin-bottom: 15px;
+            }
         }
     </style>
 </head>
@@ -71,24 +100,26 @@
     <div class="container">
         <!-- Project 1 -->
         <div class="project">
-            <img src="project1.jpg" alt="Project 1 Image">
-            <div class="project-info">
-                <h2> CLASLAM (Complex Large Scale Localization and Mapping)</h2>
-                <p><strong> KTH Division of Robotics, Perception and Learning (RPL) </strong> </p>
-                <p><strong>Funding:</strong>  Wallenberg AI, Autonomous Systems and Software Program </p>
-                <p>Description: Research and Development of robust localization and mapping capabilities in complex large-scale environments with consumer grade LiDARs and minimum human intervention directly supporting downstream tasks.</p>
+            <h2>CLASLAM (Complex Large Scale Localization and Mapping)</h2>
+            <p><strong>Funding:</strong> Wallenberg AI, Autonomous Systems and Software Program</p>
+            <p>Description: Research and development of robust localization and mapping capabilities in complex large-scale environments with consumer-grade LiDARs and minimal human intervention, directly supporting downstream tasks.</p>
 
-                <!-- Sub-section 1 -->
-                <div class="sub-section">
+            <!-- Sub-section 1 -->
+            <div class="sub-section">
+                <!-- <img src="lidar_processing.jpg" alt="LiDAR Data Processing"> -->
+                <div class="sub-section-text">
                     <h3>Loop Closure Detection for Large scale environments</h3>
                     <p>Loop closure detection for large scale environments.</p>
                 </div>
+            </div>
 
-                <!-- Sub-section 2 -->
-                <div class="sub-section">
-                    <img src="assets/ITSC_paper.png" alt="ITSC_paper">
+            <!-- Sub-section 2 -->
+            <div class="sub-section">
+                <img src="assets/ITSC_paper.png" alt="ITSC_paper">
+                <div class="sub-section-text">
                     <h3>HD-maps as prior information for globally consistent mapping - [<a href="https://arxiv.org/pdf/2407.19463" target="_blank">link</a>] </h3>
                     <p> We proposed a lidar based localization and mapping (LOAM) system that can  exploit the common HD-maps in autonomous driving scenarios.  Specifically, we propose a technique to extract information from  the drivable area and ground surface height components of the HD-maps to construct 4DOF pose priors. These pose priors are then further integrated into the pose-graph optimization problem to create a globally consistent 3D map.</p>
+
                 </div>
             </div>
         </div>
@@ -97,10 +128,9 @@
         <div class="project">
             <img src="project2.jpg" alt="Project 2 Image">
             <div class="project-info">
-                <h2> Life-long SLAM using 3D LiDAR</h2>
-                <!-- <p><strong>Link:</strong> <a href="https://www.example.com" target="_blank">Project Link</a></p> -->
-                <p><strong>Organization:</strong>  Shanghai Key Lab of Navigation and Location-based Services, Shanghai Jiaotong University </p>
-                <p>Description: Implemented a feature detection approach based on applying an ORB feature detector on laser-rasterized images, and built a complete SLAM system based on such a feature detection method that can estimate the accurate 6DOF pose of the robot at minimal computational costs.</p>
+                <h2>Life-long SLAM using 3D LiDAR</h2>
+                <p><strong>Organization:</strong> Shanghai Key Lab of Navigation and Location-based Services, Shanghai Jiaotong University</p>
+                <p>Description: Implemented a feature detection approach based on applying an ORB feature detector on laser-rasterized images, and built a complete SLAM system based on such a feature detection method that can estimate the accurate 6DOF pose of the robot at minimal computational costs. The work was published in the IEEE Sensors Journal.</p>
             </div>
         </div>
 
@@ -108,13 +138,11 @@
         <div class="project">
             <img src="UAV_swarm.jpg" alt="UAV_swarm">
             <div class="project-info">
-                <h2> Fixed-wing UAV swarm </h2>
-                <p><strong>Funding:</strong> China Electronics Technology Group Corporation </p>
-                <p>Description: A swarm based on 119 small fixed-wing UAVs successfully demonstrated actions such as intensive ejection take-off, aerial assembly, multi-target grouping, formation encirclement, and group operations. As system engineer, I contributed to the implementation of the leader-follower swarm formation with collision avoidance among swarm agents.</p>
+                <h2>Fixed-wing UAV Swarm</h2>
+                <p><strong>Funding:</strong> China Electronics Technology Group Corporation</p>
+                <p>Description: A swarm of 119 small fixed-wing UAVs successfully demonstrated actions such as intensive ejection take-off, aerial assembly, multi-target grouping, formation encirclement, and group operations. As a system engineer, I contributed to the implementation of the leader-follower swarm formation with collision avoidance among swarm agents.</p>
             </div>
         </div>
-        
-        <!-- Additional projects can be added in the same format -->
     </div>
 
 </body>
