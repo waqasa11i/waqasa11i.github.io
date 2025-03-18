@@ -24,7 +24,8 @@
         }
         .project {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            align-items: flex-start;
             margin-bottom: 30px;
             background-color: white;
             padding: 15px;
@@ -60,7 +61,7 @@
         /* Sub-section styles with images */
         .sub-section {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             margin-top: 20px;
             padding: 15px;
             background: #f9f9f9;
@@ -100,35 +101,37 @@
     <div class="container">
         <!-- Project 1 -->
         <div class="project">
-            <h2>CLASLAM (Complex Large Scale Localization and Mapping)</h2>
-            <p><strong>Funding:</strong> Wallenberg AI, Autonomous Systems and Software Program</p>
-            <p><strong>Organization:</strong> Division of Robotics, Perception and Learning, KTH Royal Institute of Technology</p>
-            <p>Description: Research and development of robust localization and mapping capabilities in complex large-scale environments with consumer-grade LiDARs and minimal human intervention, directly supporting downstream tasks.</p>
+            <img src="assets/ITSC_paper.png" alt="ITSC_paper">
+            <div class="project-info">
+                <h2>CLASLAM (Complex Large Scale Localization and Mapping)</h2>
+                <p><strong>Funding:</strong> Wallenberg AI, Autonomous Systems and Software Program</p>
+                <p><strong>Organization:</strong> Division of Robotics, Perception and Learning, KTH Royal Institute of Technology</p>
+                <p>Description: Research and development of robust localization and mapping capabilities in complex large-scale environments with consumer-grade LiDARs and minimal human intervention, directly supporting downstream tasks.</p>
 
-            <!-- Sub-section 1 -->
-            <div class="sub-section">
-                <!-- <img src="lidar_processing.jpg" alt="LiDAR Data Processing"> -->
-                <div class="sub-section-text">
-                    <h3>Loop Closure Detection for Large scale environments</h3>
-                    <p>Loop closure detection for large scale environments.</p>
+                <!-- Sub-section 1 -->
+                <div class="sub-section">
+                    <!-- <img src="lidar_processing.jpg" alt="LiDAR Data Processing"> -->
+                    <div class="sub-section-text">
+                        <h3>Loop Closure Detection for Large scale environments</h3>
+                        <p>Loop closure detection for large scale environments.</p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Sub-section 2 -->
-            <div class="sub-section">
-                <img src="assets/ITSC_paper.png" alt="ITSC_paper">
-                <div class="sub-section-text">
-                    <h3>HD-maps as prior information for globally consistent mapping - [<a href="https://arxiv.org/pdf/2407.19463" target="_blank">link</a>] </h3>
-                    <p> We proposed a lidar based localization and mapping (LOAM) system that can  exploit the common HD-maps in autonomous driving scenarios.  Specifically, we propose a technique to extract information from  the drivable area and ground surface height components of the HD-maps to construct 4DOF pose priors. These pose priors are then further integrated into the pose-graph optimization problem to create a globally consistent 3D map.</p>
-
+                <!-- Sub-section 2 -->
+                <div class="sub-section">
+                    <img src="assets/ITSC_paper.png" alt="ITSC_paper">
+                    <div class="sub-section-text">
+                        <h3>HD-maps as prior information for globally consistent mapping - [<a href="https://arxiv.org/pdf/2407.19463" target="_blank">link</a>] </h3>
+                        <p>We proposed a lidar-based localization and mapping (LOAM) system that can exploit the common HD-maps in autonomous driving scenarios. Specifically, we propose a technique to extract information from the drivable area and ground surface height components of the HD-maps to construct 4DOF pose priors. These pose priors are then further integrated into the pose-graph optimization problem to create a globally consistent 3D map.</p>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- Project 2 -->
         <div class="project">
-            <div class="project-info">
             <img src="assets/ll_slam.jpg" alt="ll_slam_Image">
+            <div class="project-info">
                 <h2>Life-long SLAM using 3D LiDAR</h2>
                 <p><strong>Organization:</strong> Shanghai Key Lab of Navigation and Location-based Services, Shanghai Jiaotong University</p>
                 <p>Description: In this project, we proposed a solution to the problem of life-long SLAM. We represent the global map as a set of rasterized images of local maps along with a map management system responsible for updating local maps and keeping track of older values. We also present an efficient approach of using the bag of visual words method for loop closure detection and relocalization. We evaluate the performance of our system on the KITTI dataset and an indoor dataset. Our loop closure system reported recall and precision of above 90 percent. The computational cost of our system is much lower as compared to state-of-the-art methods. Our method reports lower computational requirements even for long-term operation. The work was published in the IEEE Sensors Journal.</p>
@@ -137,7 +140,7 @@
 
         <!-- Project 3 -->
         <div class="project">
-            <img src="assets/UAV_swarm.jpg" alt="UAV_swarm">
+            <img src="assets/UAV_swarm.png" alt="UAV_swarm">
             <div class="project-info">
                 <h2>Fixed-wing UAV Swarm</h2>
                 <p><strong>Funding:</strong> China Electronics Technology Group Corporation</p>
